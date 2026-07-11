@@ -48,6 +48,15 @@ Just mention what you want to do — the suite routes to the right skill:
 | "plan maintenance for v2" | Maintenance Engineer |
 | "run the whole pipeline" | Orchestrator |
 
+## Best Practices
+
+Every role skill embeds the relevant sections from
+[references/best-practices.md](references/best-practices.md) — a 586-line
+reference covering architecture, development, product/UX, collaboration,
+quality/operations, and platform-specific guidance (Debian + Android).
+When a role subagent loads, it gets its best-practice sections inline —
+no separate file load needed.
+
 ## What Makes This Debian-Specific
 
 - **FHS compliance** — files go in `/usr/bin`, `/etc`, `/var/lib`, not `/opt`
